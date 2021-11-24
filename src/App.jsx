@@ -1,11 +1,12 @@
+import React from 'react';
 import './App.css';
-import From from './From';
+import Calculator from './components/Calculator';
 
 const App = () => {
   return (
     <div className="App">
       <h1>from handling</h1>
-      <From />
+      <Calculator />
     </div>
   );
 };
