@@ -31,7 +31,7 @@ const App = () => {
         setCount2(count2 - 1);
     };
     return (
-        <div>
+        <div className="App">
             <button onClick={increment} type="button">
                 {' '}
                 b1 click
