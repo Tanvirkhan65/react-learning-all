@@ -1,29 +1,32 @@
 import React, { useState } from 'react';
 
 const Todo = () => {
-    const [todos, setTodos] = useState('');
-    const [warning, setWarning] = useState(null);
-    const handleInput = (e) => {
-        const inputValue = e.target.value;
-        const warnings = inputValue.includes('.js') ? 'you need javaScript Skills' : null;
-        setTodos(inputValue);
-        setWarning(warnings);
-    };
+    const [titles, setTitles] = useState({
+        title: '',
+        description: '',
+    });
+    const { title, description } = titles;
+
     return (
         <div>
-            <p>{todos}</p>
-            <p>
-                <textarea
-                    onChange={handleInput}
-                    name="todo"
-                    cols="30"
-                    rows="10"
-                    value={todos}
-                />
-            </p>
-            <hr />
-            <hr />
-            <h1>{warning || 'good Choice'}</h1>
+            <h1>{title}</h1>
+            <input
+                type="text"
+                value={title}
+                onChange={(e) => setTitles({
+                    ...titles,
+                    title: e.target.value,
+                })}
+            />
+            <h2>{description}</h2>
+            <input
+                type="text"
+                value={description}
+                onChange={(e) => setTitles({
+                    ...titles,
+                    description: e.target.value,
+                })}
+            />
         </div>
     );
 };
