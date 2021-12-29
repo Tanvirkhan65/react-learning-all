@@ -1,11 +1,13 @@
 import React from 'react';
 import './App.css';
-import Form from './components/Form';
+import FormComplete from './components/FormComplete';
 
 function App() {
     return (
         <div className="App">
-            <Form />
+            {/* <FormNested /> */}
+            {/* <FormFile /> */}
+            <FormComplete />
         </div>
     );
 }
