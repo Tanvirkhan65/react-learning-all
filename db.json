@@ -1,0 +1,14 @@
+{
+  "users": [
+    {
+      "id": "66df7b7d-f578-4bcd-92e2-5298ad16697e",
+      "title": "javaScript",
+      "price": "120"
+    },
+    {
+      "id": "9bad8f82-9ec0-40b8-a382-5e0d336a0f57",
+      "title": "haskell currying",
+      "price": "500"
+    }
+  ]
+}
